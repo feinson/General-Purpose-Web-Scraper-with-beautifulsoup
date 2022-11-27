@@ -2,7 +2,7 @@ from libraries_and_configuration_files.general_web_scraping import GeneralScrape
 import pandas as pd
 
 # Change the configuration file to specify what is to be scraped.
-import libraries_and_configuration_files.configuration_file_az_animals as config
+import libraries_and_configuration_files.configuration_file_election as config
 
 starting_url = config.STARTING_URL
 links_selector = config.LINKS_SELECTOR

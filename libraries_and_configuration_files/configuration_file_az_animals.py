@@ -15,12 +15,13 @@ DICT_PROPERTIES = {
     'Name': ('#title-header > div > div:nth-child(1) > div > h1', 'text') 
     ,'Latin Name': ('#title-header > div > div:nth-child(1) > div > p', 'text') 
     ,'Class': ('#content-wrapper > div > main > article > div.entry-content > div.row.animal-facts-box > div:nth-child(1) > dl > dd:nth-child(6)', 'text') 
-    ,'Conservation status': ('a[href="/animals/endangered/extinct/"], a[href="/animals/endangered/least-concern/"], a[href="/animals/endangered/extinct-in-the-wild/"], a[href="/animals/endangered/critically-endangered/"], a[href="/animals/endangered/endangered/"], a[href="/animals/endangered/vulnerable/"], a[href="/animals/endangered/near-threatened/"], a[href="/animals/endangered/data-deficient/"], a[href="/animals/endangered/not-evaluated/"], a[href="/animals/endangered/not-listed/"]', 'text')
+    ,'Conservation status': ('a:is([href="/animals/endangered/extinct/"],[href="/animals/endangered/least-concern/"],[href="/animals/endangered/extinct-in-the-wild/"],[href="/animals/endangered/critically-endangered/"],[href="/animals/endangered/endangered/"],[href="/animals/endangered/vulnerable/"],[href="/animals/endangered/near-threatened/"],[href="/animals/endangered/data-deficient/"],[href="/animals/endangered/not-evaluated/"],[href="/animals/endangered/not-listed/"])', 'text')
+    ,'Diet': ('dt:has(a[href="https://a-z-animals.com/reference/glossary/#jump-diet"]) + dd', 'text')
     #If there is an image add the image source selector here.
     #,'Image source': ('#single-animal-text > figure.wp-block-image.size-large > img, #single-animal-text > figure.wp-container-2.wp-block-gallery-1.wp-block-gallery.has-nested-images.columns-default.is-cropped > figure > img, #single-animal-text > div:nth-child(31) > figure > img, #single-animal-text > div.wp-block-image > figure > img', 'src')
     }
 
-    # 
+    # a[href="/animals/endangered/extinct/"], a[href="/animals/endangered/least-concern/"], a[href="/animals/endangered/extinct-in-the-wild/"], a[href="/animals/endangered/critically-endangered/"], a[href="/animals/endangered/endangered/"], a[href="/animals/endangered/vulnerable/"], a[href="/animals/endangered/near-threatened/"], a[href="/animals/endangered/data-deficient/"], a[href="/animals/endangered/not-evaluated/"], a[href="/animals/endangered/not-listed/"]
 
 # This is the name of the bucket that the data will be stored in.
 BUCKET_NAME = 'aicoredatacollectionbucket'

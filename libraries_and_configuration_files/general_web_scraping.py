@@ -4,7 +4,7 @@ from pydantic import validate_arguments
 from urllib.parse import urlparse
 import uuid
 
-from data_handling import DataHandler
+from libraries_and_configuration_files.data_handling import DataHandler
 
 class GeneralScraper(DataHandler):
 
@@ -67,9 +67,9 @@ class GeneralScraper(DataHandler):
 
         return list_of_urls_to_scrape
 
+
     @validate_arguments
     def scrape_data_from_url(self, url: str):
-
 
         soup = GeneralScraper.make_soup(url)
         properties_data = {}
