@@ -32,4 +32,5 @@ The repo containers a Dockerfile that can be used to build a docker image to run
 
 ```docker run -v /$(pwd)/raw_data:/raw_data <docker_image_name>```
 
-This creates a bind mount between the raw_data folder in the Docker container, and the raw_data folder created in the current directory. The image is on Dockerhub.
+This creates a bind mount between the raw_data folder in the Docker container, and the raw_data folder created in the current directory.
+This github repo has a workflow action that connects it to Dockerhub.
