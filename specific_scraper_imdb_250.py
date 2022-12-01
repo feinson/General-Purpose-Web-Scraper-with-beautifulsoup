@@ -30,12 +30,12 @@ if __name__ == "__main__":
         results_dict = specific_scraper.scrape_data_from_url(url)
         GeneralScraper.add_uuid_to_dick(results_dict)
         specific_scraper.save_image_if_possible(results_dict)
-        print(results_dict)
+        print(results_dict, flush=True)
 
         list_of_results_dicts.append(results_dict)
 
     complete_data = pd.DataFrame(list_of_results_dicts)
-    specific_scraper.save_data_as_csv(complete_data)
+    specific_scraper.save_dataframe_as_csv(complete_data)
     
 
     

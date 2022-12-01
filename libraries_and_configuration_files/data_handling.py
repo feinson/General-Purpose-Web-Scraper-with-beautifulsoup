@@ -28,8 +28,7 @@ class DataHandler:
          with open(f"{self.raw_data_path}/complete_data.json", 'w') as all_data:
             json.dump(complete_data, all_data, indent=4)
 
-    #@validate_arguments(config=dict(arbitrary_types_allowed=True))
-    def save_data_as_csv(self, complete_data: dict):
+    def save_dataframe_as_csv(self, complete_data):
 
            complete_data.to_csv(f"{self.raw_data_path}/complete_data.csv")
 
@@ -39,7 +38,7 @@ class DataHandler:
         try:
             img_source_url = properties_data.pop("Image source") #It should fail here and nowhere else
 
-            image_folder = f"{self.raw_data_path}/images"
+            image_folder = f"{self.raw_data_path}/Images"
             try:
                 os.mkdir(image_folder)
             except FileExistsError:
