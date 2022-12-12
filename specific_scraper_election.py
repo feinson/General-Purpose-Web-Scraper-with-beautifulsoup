@@ -7,7 +7,6 @@ import libraries_and_configuration_files.configuration_file_election as config
 starting_url = config.STARTING_URL
 links_selector = config.LINKS_SELECTOR
 dict_properties = config.DICT_PROPERTIES
-bucket_name = config.BUCKET_NAME
 raw_data_path = config.RAW_DATA_PATH
 
 try:                                                    

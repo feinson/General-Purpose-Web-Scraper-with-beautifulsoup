@@ -23,9 +23,6 @@ DICT_PROPERTIES = {
 
     # a[href="/animals/endangered/extinct/"], a[href="/animals/endangered/least-concern/"], a[href="/animals/endangered/extinct-in-the-wild/"], a[href="/animals/endangered/critically-endangered/"], a[href="/animals/endangered/endangered/"], a[href="/animals/endangered/vulnerable/"], a[href="/animals/endangered/near-threatened/"], a[href="/animals/endangered/data-deficient/"], a[href="/animals/endangered/not-evaluated/"], a[href="/animals/endangered/not-listed/"]
 
-# This is the name of the bucket that the data will be stored in.
-BUCKET_NAME = 'aicoredatacollectionbucket'
-
 
 # This is the path to the raw data folder.
 RAW_DATA_PATH = "./raw_data"

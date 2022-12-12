@@ -24,8 +24,6 @@ DICT_PROPERTIES = {
 
     # 
 
-# This is the name of the bucket that the data will be stored in.
-BUCKET_NAME = 'aicoredatacollectionbucket'
 
 
 # This is the path to the raw data folder.
