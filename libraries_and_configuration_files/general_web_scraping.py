@@ -48,11 +48,15 @@ class GeneralScraper(DataHandler):
 
     @validate_arguments
     def complete_rel_href(self, half_url: str):
+        print(half_url)
+        if half_url[0:6] == "//www.":
+            full_url = f"https:{half_url}"
+        elif half_url[0:len(self.site_url)] != self.site_url:
+            full_url = f"{self.site_url}{half_url}"
+        else:
+            full_url = half_url
 
-        if half_url[0:len(self.site_url)] != self.site_url:
-            half_url = f"{self.site_url}{half_url}"
-
-        return half_url
+        return full_url
     
     def make_list_of_urls_to_scrape(self):
 
@@ -85,7 +89,7 @@ class GeneralScraper(DataHandler):
                     result = result_container.get(self.dict_properties[property][1])
                 
             except:
-                result = "Not found"
+                result = "Not found :("
                 print(f"'{property}' could not be found.")
                 
             properties_data[property] = result
