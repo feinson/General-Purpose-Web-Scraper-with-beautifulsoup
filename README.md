@@ -17,7 +17,7 @@ The scraper starts on a central URL that contains a number of links to other pag
 The data to be gathered from each page can be configured in the configuration file.
 
 ## Configuration files
-Since the BeautifulSoup library does not support XPath, elements to be scraped are found via their CSS selector. The configuration file must be given the CSS selectors for all data that is to be scraped. CSS selectors can be copied from a web-page using Chrome's 'inspect element' feature, but that will only give the absolute path selector. For greater precision, some knowledge of CSS selectors is required to write the configuration files. 
+Since the BeautifulSoup library does not support XPath, elements to be scraped are found via their CSS selector. The configuration file must be given the CSS selectors for all data that is to be scraped. CSS selectors can be copied from a web-page using Chrome's 'inspect element' feature. Greater knowledge of CSS selectors allows for greater precision when scraping, since an exact selection of items, as well as the exact item, can be scraped.
 
 The parameters in the configuration file are as followed:
 
