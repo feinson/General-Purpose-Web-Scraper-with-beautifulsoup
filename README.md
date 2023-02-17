@@ -1,4 +1,4 @@
-# data-collection-pipeline
+# Genearl Purpose Web Scraper
 
 This repo contains the code for a semi general purpose web-scraper that runs using the library BeautifulSoup.
 
